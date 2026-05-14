@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Cafe website app project
 
-## Getting Started
+#tech-stack
+1. Next.js (frontend)
+2. Supabase (backend)
+3. Lucide react (icons)
 
-First, run the development server:
+#objective
+- To showcase mark's next step in continuous learning and growth in developing and designing modern web applications
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#features
+1. navbar that has key menus (home, menu, about, contact us, login, and sign up page)
+2. a footer that allows for even easier navigation to the web app and other links
+4. responsive UI design (desktop, mobile, tablets) on all platforms
+5. menu page that allows for placing orders (drinks, food, desserts)
+6. login feature allows users to login
+7. dashboard feature that displays info related to a user (parents and staff separate)
+8. about page that shows more story 
+9. contact page that allows user feedbacks
+10. password reset feature
+12. signup user feature
+13. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#future scalability of the app
+1. add careers page section
+2. add Frequently Asked Questions page section
+3. add booking appointments feature
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
