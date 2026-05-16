@@ -23,7 +23,7 @@ export default function MessageCard({
     <>
       <div className="max-w-6xl mx-auto px-4">
         
-        <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* Header */}
           <button
             onClick={async () => {
@@ -59,7 +59,7 @@ export default function MessageCard({
                 }
               }
             }}
-            className="w-full px-4 py-3 flex items-center justify-between hover:bg-gray-50 transition"
+            className="w-full px-4 py-3 flex items-center justify-between hover:bg-gray-50 transition cursor-pointer"
           >
             <div className="text-left min-w-0">
               <div className="flex items-center gap-2">
@@ -76,7 +76,7 @@ export default function MessageCard({
 
               <p className="text-xs text-gray-500">
                 {/*msg.staff?.full_name*/}
-                {displayName}
+                Staff: {displayName}
               </p>
             </div>
 

@@ -18,8 +18,7 @@
 8. about page that shows more story 
 9. contact page that allows user feedbacks
 10. password reset feature
-12. signup user feature
-13. 
+11. signup user feature
 
 #future scalability of the app
 1. add careers page section

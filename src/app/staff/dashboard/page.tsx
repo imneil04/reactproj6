@@ -11,8 +11,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
 
 import MessagesSection from "@/app/components/messagesection";
-
 import Attendance from "@/app/attendance/page";
+import AppointmentList from "@/ccomponents/staff/appointmentlist";
 
 export default async function StaffDashboardPage() {
   const supabase = await createClient();
@@ -41,8 +41,6 @@ export default async function StaffDashboardPage() {
   return (
     <div className="space-y-6 p-2">
         <h1 className="text-2xl font-bold flex flex-wrap justify-center mt-2">Welcome to your Dashboard</h1>
-        <Attendance />
-        
         <div className="mb-8 max-w-6xl mx-auto px-4">
                 <h1 className="text-3xl font-bold text-slate-800">
                   Message Inbox:
@@ -52,6 +50,18 @@ export default async function StaffDashboardPage() {
                 </p>
         </div>
         <MessagesSection role="staff" />
+        
+        <Attendance />
+
+        <div className="mb-8 text-center">
+                <h1 className="text-3xl font-bold text-slate-800">
+                  Show Appointments
+                </h1>
+                <p className="text-slate-500 mt-2">
+                  Here you view, check, and approve parent appointment requests.
+                </p>
+        </div>
+        <AppointmentList />
     </div>
   );
 }

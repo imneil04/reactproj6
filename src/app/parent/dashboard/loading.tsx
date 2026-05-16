@@ -1,4 +1,4 @@
-//route-level loading content function
+//route-level loading content function, while content is being fetched
 export default function Loading() {
 
   return (

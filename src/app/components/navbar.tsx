@@ -111,7 +111,7 @@ export default function Navbar () {
                         onMouseEnter={() => setDropdownOpen(true)}
                         onMouseLeave={() => setDropdownOpen(false)}
                         >
-                        <button className="flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white hover:bg-gray-800">
+                        <button className="flex items-center gap-2 rounded-full bg-cyan-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-cyan-700 cursor-pointer">
                             {user ? 'My Account' : 'Get Started'}
                         </button>
 

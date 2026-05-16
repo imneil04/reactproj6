@@ -58,19 +58,22 @@ export default function MessageForm({
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4">
-      {/* Toggle Button */}
-      <button
-        onClick={() => setShowForm(!showForm)}
-        className="bg-cyan-600 hover:bg-cyan-700 hover:shadow-lg text-white px-6 py-3 rounded-xl transition-all duration-200 ease-in-out cursor-pointer"
-      >
-        {showForm ? "Close Message" : "New Message"}
-      </button>
+    <div className="px-4">
+      <div className="flex justify-center">
+          {/* Toggle Button */}
+        <button
+          onClick={() => setShowForm(!showForm)}
+          className="bg-cyan-600 hover:bg-cyan-700 hover:shadow-lg text-white px-6 py-3 rounded-xl transition-all duration-200 ease-in-out cursor-pointer"
+        >
+          {showForm ? "Close Message" : "New Message"}
+        </button>
+      </div>
+      
 
       {/* Animated Form */}
       <div
         className={`
-          transition-all duration-300 overflow-hidden
+          transition-all duration-300 overflow-hidden flex justify-center py-2
           ${
             showForm
               ? "max-h-[800px] opacity-100 mt-6"
@@ -78,7 +81,7 @@ export default function MessageForm({
           }
         `}
       >
-        <div className="bg-white rounded-2xl shadow p-6">
+        <div className="bg-white rounded-2xl shadow-md p-6 shadow-cyan-200">
           <h2 className="text-2xl font-semibold mb-6">
             Send a Message
           </h2>
@@ -98,7 +101,7 @@ export default function MessageForm({
                 onChange={(e) =>
                   setStaffId(e.target.value)
                 }
-                className="w-full border rounded-xl px-4 py-3"
+                className="w-full rounded-xl px-4 py-3 shadow-lg"
               >
                 <option value="">
                   Select Staff
@@ -128,7 +131,7 @@ export default function MessageForm({
                   setSubject(e.target.value)
                 }
                 placeholder="Enter subject"
-                className="w-full border rounded-xl px-4 py-3"
+                className="w-full rounded-xl px-4 py-3 shadow-lg"
               />
             </div>
 
@@ -145,7 +148,7 @@ export default function MessageForm({
                   setMessage(e.target.value)
                 }
                 placeholder="Type your message..."
-                className="w-full border rounded-xl px-4 py-3 resize-none"
+                className="w-full rounded-xl px-4 py-3 resize-none shadow-lg"
               />
             </div>
 
@@ -153,7 +156,7 @@ export default function MessageForm({
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="cursor-pointer bg-cyan-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl transition"
+                className="cursor-pointer bg-cyan-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl transition shadow-lg"
               >
                 Send Message
               </button>

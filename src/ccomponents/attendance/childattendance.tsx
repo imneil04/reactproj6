@@ -158,7 +158,7 @@ export default function ChildAttendance() {
 
         <section className="max-w-6xl mx-auto px-4 py-10">
 
-            <div className="mb-8">
+            <div className="mb-8 text-center">
                 <h1 className="text-3xl font-bold text-slate-800">
                 Child Attendance
                 </h1>
