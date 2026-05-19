@@ -2,7 +2,7 @@
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import { AuthProvider } from "@/providers/authprovider";
+//import { AuthProvider } from "@/providers/authprovider";
 
 //root layout for web app
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
                 <Navbar />
 
                   <main className="flex-1">
-                      <AuthProvider>{children}</AuthProvider>
+                      {children}
                   </main>
 
                 <Footer />
