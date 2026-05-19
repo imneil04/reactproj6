@@ -112,7 +112,7 @@ export default function AppointmentList() {
 
   return (
     <>
-      <div className="bg-gray-100 flex justify-center">
+      <div className="flex justify-center">
         <div className="overflow-x-auto max-w-2xl">
           <div className="flex gap-4 pb-4">
             {appointments.map((appointment) => (
