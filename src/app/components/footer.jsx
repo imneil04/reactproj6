@@ -40,8 +40,8 @@ export default function Footer () {
                       <div>
                         <h4 className="font-semibold mb-2">Others</h4>
                         <ul className="space-y-1 text-gray-600">
-                          <li><Link href="#" className="hover:text-blue-600">Privacy</Link></li>
-                          <li><Link href="#" className="hover:text-blue-600">Terms</Link></li>
+                          <li><Link href="/privacy" className="hover:text-blue-600">Privacy</Link></li>
+                          <li><Link href="/terms" className="hover:text-blue-600">Terms</Link></li>
                         </ul>
                       </div>
                     </div>

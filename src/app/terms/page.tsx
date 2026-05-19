@@ -1,13 +1,13 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-export default function FAQPage () {
+export default function TermsPage () {
 
     const route = useRouter();
     
     return (
         <>
-            <div className="min-h-screen bg-gray-500 flex items-center justify-center px-6">
+             <div className="min-h-screen bg-gray-500 flex items-center justify-center px-6">
                 <div className="max-w-xl w-full text-center">
                     
                     {/* Badge */}

@@ -71,7 +71,7 @@ export default function AboutPage () {
                         ].map((value, index) => (
                             <div
                             key={index}
-                            className="rounded-2xl bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                            className="rounded-2xl bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-200 cursor-pointer"
                             >
                             <h5 className="text-lg font-semibold text-gray-800">
                                 {value}
@@ -94,7 +94,7 @@ export default function AboutPage () {
                         {teamMembers.map((member) => (
                             <div
                                 key={member.id}
-                                className="overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                                className="overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-200 cursor-pointer"
                                 >
                                 <Image
                                     src={member.img}
@@ -167,7 +167,7 @@ export default function AboutPage () {
 
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                         
-                            <button className="rounded-xl bg-gray-800 px-6 py-3 font-medium text-white transition hover:bg-amber-700 cursor-pointer">
+                            <button className="rounded-xl bg-cyan-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500 cursor-pointer">
                                 Book a Tour
                             </button>
 

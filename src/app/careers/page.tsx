@@ -1,6 +1,10 @@
 "use client"
+import { useRouter } from "next/navigation";
 
 export default function CareersPage () {
+
+    const route = useRouter();
+
     return (
         <>
             <div className="min-h-screen bg-gray-500 flex items-center justify-center px-6">
@@ -32,13 +36,15 @@ export default function CareersPage () {
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button
-                            className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium shadow-lg"
+                            onClick={() => route.push("/")}
+                            className="px-6 py-3 rounded-xl bg-cyan-600 hover:bg-blue-500 transition text-white font-medium shadow-lg cursor-pointer"
                         >
                             Go Back
                         </button>
 
                         <button
-                            className="px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-400 hover:bg-slate-800 transition text-slate-200 font-medium"
+                            onClick={() => route.push("/contact")}
+                            className="px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-400 hover:bg-amber-800 transition text-slate-200 font-medium cursor-pointer"
                         >
                             Contact Support
                         </button>
