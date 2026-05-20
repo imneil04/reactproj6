@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ParentAppointmentCard from "./parentappointmentcard";
 import ParentAppointmentDetailsModal from "./parentappointmentmodal";
 
-//strong type
+//strong type fields
 export interface ParentAppointment {
   id: string;
   parent_name: string;
@@ -12,6 +12,7 @@ export interface ParentAppointment {
   appointment_date: string;
   appointment_time: string;
   location: string;
+  subject: string;
   notes: string;
   status: string;
 }

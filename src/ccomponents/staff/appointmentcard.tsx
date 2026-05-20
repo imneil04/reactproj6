@@ -27,6 +27,10 @@ export default function AppointmentCard({
           <p className="text-xs text-gray-500">
             {appointment.child_name}
           </p>
+
+           <p className="text-xs text-gray-500 mt-2">
+            {appointment.notes}
+          </p>
         </div>
 
         <span
@@ -58,7 +62,7 @@ export default function AppointmentCard({
           Details
         </button>
 
-        {appointment.status !== "cancelled" && (
+        {appointment.status === "pending" && (
           <button
             onClick={() =>
               onStatusChange(

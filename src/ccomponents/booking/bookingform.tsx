@@ -20,6 +20,7 @@ export default function BookingForm() {
     child_name: "",
     child_age: "",
     location: "",
+    subject: "",
     notes: "",
   });
 
@@ -69,6 +70,7 @@ export default function BookingForm() {
         child_name: "",
         child_age: "",
         location: "",
+        subject: "",
         notes: "",
       });
 
@@ -190,6 +192,37 @@ export default function BookingForm() {
                                                 <option value="Virtual Remote">Virtual remote</option>
                                             </select>
                                         </div>
+
+                                            <select
+                                                name="subject"
+                                                value={formData.subject}
+                                                onChange={handleChange}
+                                                className="rounded-lg shadow-lg p-3"
+                                                >
+                                                <option value="">
+                                                    Select Subject
+                                                </option>
+
+                                                <option value="Daycare Tour">
+                                                    Daycare Tour
+                                                </option>
+
+                                                <option value="Enrollment Consultation">
+                                                    Enrollment Consultation
+                                                </option>
+
+                                                <option value="Parent Meeting">
+                                                    Parent Meeting
+                                                </option>
+
+                                                <option value="Child Assessment">
+                                                    Child Assessment
+                                                </option>
+
+                                                <option value="General Inquiry">
+                                                    General Inquiry
+                                                </option>
+                                            </select>
 
                                             <textarea
                                                 name="notes"

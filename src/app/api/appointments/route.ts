@@ -16,12 +16,13 @@ export async function POST(req: Request) {
             child_name,
             child_age,
             location,
+            subject,
             notes,
             appointment_date,
             appointment_time,
             } = body;
 
-            console.log("Incoming appointment:", body);
+            //console.log("Incoming appointment:", body);
 
             //auth user
             const {
@@ -52,6 +53,7 @@ export async function POST(req: Request) {
                 child_name,
                 child_age,
                 location,
+                subject,
                 notes,
                 appointment_date,
                 appointment_time,

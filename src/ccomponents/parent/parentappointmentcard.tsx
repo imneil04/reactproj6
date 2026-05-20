@@ -23,6 +23,10 @@ export default function ParentAppointmentCard({
           <p className="text-xs text-gray-500">
             {appointment.location}
           </p>
+
+          <p className="text-xs text-gray-500 mt-2">
+            {appointment.subject}
+          </p>
         </div>
 
         <span
