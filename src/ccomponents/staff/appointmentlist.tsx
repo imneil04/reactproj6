@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import AppointmentCard from "./appointmentcard";
 import AppointmentDetailsModal from "./appointmentdetailsmodal";
@@ -22,11 +21,12 @@ export interface Appointment {
 }
 
 export default function AppointmentList() {
+
   const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [selectedAppointment, setSelectedAppointment] =
     useState<Appointment | null>(null);
 
-  const [loading, setLoading] = useState(true);
+  //const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchAppointments();
@@ -47,10 +47,10 @@ export default function AppointmentList() {
 
       console.error("Fetch appointments error:", error);
 
-    } finally {
+    } /*finally {
 
       setLoading(false);
-    }
+    } */
   };
 
   const handleStatusChange = async (
@@ -89,9 +89,9 @@ export default function AppointmentList() {
     }
   };
 
-  if (loading) {
+  /*if (loading) {
     return <p>Loading appointments...</p>;
-  }
+  } */
 
   //console.log("Nothing", appointments);
 

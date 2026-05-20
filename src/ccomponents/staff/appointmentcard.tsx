@@ -34,7 +34,7 @@ export default function AppointmentCard({
             appointment.status === "approved"
               ? "bg-green-100 text-green-700"
               : appointment.status === "cancelled"
-              ? "bg-red-100 text-red-700"
+              ? "bg-red-100 text-red-700 ml-3"
               : "bg-yellow-100 text-yellow-700"
           }`}
         >
@@ -53,22 +53,24 @@ export default function AppointmentCard({
       <div className="mt-4 flex gap-2">
         <button
           onClick={onView}
-          className="flex-1 rounded-lg border px-3 py-2 text-sm hover:bg-gray-100 cursor-pointer transition-all"
+          className="flex-1 rounded-lg shadow-md px-3 py-2 text-sm hover:bg-gray-100 cursor-pointer transition-all"
         >
           Details
         </button>
 
-        <button
-          onClick={() =>
-            onStatusChange(
-              appointment.id,
-              "approved"
-            )
-          }
-          className="flex-1 rounded-lg bg-emerald-700 px-3 py-2 text-sm hover:text-white cursor-pointer transition-all"
-        >
-          Approve
+        {appointment.status !== "cancelled" && (
+          <button
+            onClick={() =>
+              onStatusChange(
+                appointment.id,
+                "approved"
+              )
+            }
+            className="flex-1 rounded-lg shadow-md bg-emerald-700 px-3 py-2 text-sm hover:text-white cursor-pointer transition-all"
+          >
+            Approve
         </button>
+        )}
       </div>
     </div>
   );

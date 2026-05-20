@@ -5,6 +5,8 @@
 import MessageForm from '@/app/components/messageform';
 import MessagesSection from '@/app/components/messagesection';
 import BookingForm from '@/ccomponents/booking/bookingform';
+import ParentAppointmentList, { ParentAppointment } from '@/ccomponents/parent/parentappointmentlist';
+
 import { createClient } from '@/utils/supabase/server';
 
 export default async function ParentDashboardPage () {
@@ -34,6 +36,16 @@ export default async function ParentDashboardPage () {
                     </p>
             </div>
             <MessagesSection role="parent" />
+
+            <div className="mb-8 text-center mx-auto px-4 mt-5">
+                    <h1 className="text-3xl font-bold text-slate-800">
+                      My Appointments
+                    </h1>
+                    <p className="text-slate-500 mt-2">
+                      Here you can see booked appointments.
+                    </p>
+            </div>
+            <ParentAppointmentList />
 
             <div className="mb-8 text-center mx-auto px-4 mt-5">
                     <h1 className="text-3xl font-bold text-slate-800">
