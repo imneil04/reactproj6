@@ -137,11 +137,11 @@ export default function PricingPage () {
 
                         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {[
-                            "Certified caregivers",
+                            "Certified childcare directors",
                             "Daily learning activities",
                             "Healthy meals & snacks",
                             "Secure and safe facilities",
-                            "Parent app updates",
+                            "Parent updates",
                             "Low child-to-staff ratio",
                             ].map((item, i) => (
                             <div
