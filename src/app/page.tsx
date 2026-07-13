@@ -1,10 +1,12 @@
 "use client"
 import Link from "next/link";
 import HeroCarousel from "./components/herocarousel";
+import NoticeBannerHome from "./NoticeBannerHome";
 
 export default function Home() {
   return (
     <>
+      <NoticeBannerHome />
       <div className="min-h-screen p-6">
           {/* Hero Section */}
           <section className="bg-gray-50 py-16 rounded-lg">
