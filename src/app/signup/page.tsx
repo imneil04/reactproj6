@@ -26,6 +26,8 @@ interface FormErrors {
 
 export default function SignupPage () {
 
+    const registrationOpen = false; //flag to disable form input fields (for now)
+
     const supabase = createClient(); //via ssr
 
     //state mgt for password and loading control
@@ -194,6 +196,15 @@ export default function SignupPage () {
 
     return (
         <>
+            <div className="w-80 mx-auto mt-2 rounded-2xl border border-cyan-200 bg-cyan-50 p-4">
+                <h3 className="font-semibold text-cyan-900">
+                    Registration Temporarily Unavailable
+                </h3>
+
+                <p className="mt-2 text-sm leading-6 text-slate-700">
+                    New account registration is currently disabled. Please check back soon.
+                </p>
+            </div>
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -234,6 +245,7 @@ export default function SignupPage () {
                                         onChange={handleChange}
                                         className="w-full rounded-xl border border-slate-600 bg-slate-900/70 px-4 py-3 text-white placeholder:text-slate-400 
                                         focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                                        disabled={!registrationOpen}
                                     />
 
                                     {errors.fullName && (
@@ -257,6 +269,7 @@ export default function SignupPage () {
                                         onChange={handleChange}
                                         className="w-full rounded-xl border border-slate-600 bg-slate-900/70 px-4 py-3 text-white placeholder:text-slate-400 focus:outline-none 
                                         focus:ring-2 focus:ring-cyan-500"
+                                        disabled={!registrationOpen}
                                     />
 
                                     {errors.email && (
@@ -278,6 +291,7 @@ export default function SignupPage () {
                                         onChange={handleChange}
                                         className="w-full rounded-xl border border-slate-600 bg-slate-900/70 px-4 py-3 text-white placeholder:text-slate-400 focus:outline-none 
                                         focus:ring-2 focus:ring-cyan-500"
+                                        disabled={!registrationOpen}
                                     />
 
                                     {errors.phone && (
@@ -300,6 +314,7 @@ export default function SignupPage () {
                                         onChange={handleChange}
                                         className="w-full rounded-xl border border-slate-600 bg-slate-900/70 px-4 py-3 pr-12 text-white placeholder:text-slate-400 
                                         focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                                        disabled={!registrationOpen}
                                         />
 
                                         <button
@@ -334,6 +349,7 @@ export default function SignupPage () {
                                         className="w-full rounded-xl border border-slate-600 
                                         bg-slate-900/70 px-4 py-3 pr-12 text-white placeholder:text-slate-400 
                                         focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                                        disabled={!registrationOpen}
                                         />
 
                                         <button
